@@ -1,0 +1,252 @@
+.header {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  /* Tablet */
+  @media (max-width: 1139px) {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+.header__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    align-items: stretch;
+  }
+
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.header__text {
+  width: 542px;
+
+  /* Tablet */
+  @media (max-width: 1139px) {
+    width: 420px;
+  }
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    width: 290px;
+    padding-top: 0;
+    // height: 82px;
+  }
+  p {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.6;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+      margin-bottom: 28px;
+      font-size: 18px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+      width: 354px;
+      // padding-top: 40px;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+    /* Mobile-xs */
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.header__text-mobile-xs {
+  display: none;
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.header__text-row {
+  margin-bottom: 30px;
+  /* Tablet */
+  @media (max-width: 1139px) {
+    margin-bottom: 20px;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    margin-bottom: 10px;
+  }
+
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.header__button-row {
+  column-gap: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    display: none;
+  }
+}
+
+.header__button-row {
+  display: flex;
+  /* Mobile */
+  @media (max-width: 899px) {
+    display: none;
+  }
+}
+
+.header__img {
+  img {
+    width: 475px;
+    height: 410px;
+    object-fit: cover;
+    box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+      width: 376px;
+      height: 325px;
+      box-shadow: none;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+      width: 290px;
+      height: 250px;
+      margin-bottom: auto;
+    }
+    /* Mobile-xs */
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/*=========Header__banner=========== */
+.header__banner {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  z-index: -1;
+  margin-top: -130px;
+
+  /* Tablet */
+  @media (max-width: 1139px) {
+    z-index: -1;
+    margin-top: -90px;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    margin-top: -162px;
+  }
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    margin-top: 0;
+    margin-bottom: 15px;
+    min-width: 320px;
+  }
+}
+
+/*Header Skills*/
+
+.header__skills {
+  padding-top: 70px;
+  margin-top: -70px;
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+}
+
+.header__skills-row {
+  display: flex;
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header__skills-box {
+  margin-bottom: 30px;
+
+  /* Tablet */
+  @media (max-width: 1139px) {
+    margin-bottom: 20px;
+  }
+}
+
+.header__skills-list {
+  ul {
+    margin-right: 30px;
+    width: 635px;
+    font-weight: 400;
+    font-size: 22px;
+    /* Tablet */
+    @media (max-width: 1139px) {
+      width: 493px;
+      font-size: 18px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+      width: 354px;
+      font-size: 16px;
+    }
+    /* Mobile-xs */
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+      width: 290px;
+    }
+  }
+}
+
+.header__skills-line li::before {
+  content: "—";
+  margin-right: 5px;
+  /* Mobile */
+  @media (max-width: 899px) {
+    display: none;
+  }
+}
+
+.header__skills-box-list {
+  margin-bottom: 20px;
+}
+
+/* Градиентное подчеркивание */
+.border-grad {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: left bottom 15px;
+  background-size: 100% 12px;
+  background-image: linear-gradient(to right, #fbdc4d, #fbdc4d);
+
+  // /* Tablet */
+  // @media (max-width: 1139px) {
+  //   background-position: left bottom 9px;
+  //   background-size: 100% 5px;
+  // }
+}

@@ -1,0 +1,12 @@
+.logo {
+    display: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        display: block;
+    }
+}

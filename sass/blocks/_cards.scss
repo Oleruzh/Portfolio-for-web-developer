@@ -1,0 +1,176 @@
+.card {
+  width: 350px;
+
+  /* Tablet */
+  @media (max-width: 1139px) {
+    width: 270px;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 226px;
+  }
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    width: 290px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+      font-size: 14px;
+    }
+  }
+}
+.card__link:nth-child(3) {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.card--big {
+  width: 540px;
+ 
+  /* Tablet */
+  @media (max-width: 1139px) {
+    width: 420px;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 354px;
+  }
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    width: 290px;
+  }
+}
+
+.card.card--big {
+  .title-four {
+    font-size: 30px;
+    /* Tablet */
+    @media (max-width: 1139px) {
+      margin-bottom: 5px;
+      font-size: 24px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+      font-size: 16px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+      font-size: 14px;
+    }
+  }
+  .card__img {
+    margin-bottom: 20px;
+    /* Mobile */
+    @media (max-width: 899px) {
+      margin-bottom: 10px;
+    }
+    img {
+      /* Mobile */
+      @media (max-width: 899px) {
+        width: 354px;
+        height: 180px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.card__img {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+// Анимация карточек
+.card__img:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(255, 221, 85, 0.75);
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.card__img span {
+  display: inline-block;
+  position: absolute;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  padding: 10px 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #ef6857;
+  border-radius: 80px;
+  z-index: 3;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card__link:hover .card__img:before {
+  transform: translateY(0);
+}
+.card__link:hover .card__img span {
+  opacity: 1;
+}
+// =========== Анимация карточек
+
+.cards-box {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 50px;
+  @media (max-width: 1139px) {
+    row-gap: 40px;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    row-gap: 20px;
+  }
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    row-gap: 33px;
+  }
+}
+
+.title-four {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  /* Tablet */
+  @media (max-width: 1139px) {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+}
+
+.card__img--big {
+  img {
+    width: 540px;
+    height: 370px;
+    object-fit: cover;
+  }
+}

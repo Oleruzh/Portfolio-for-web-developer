@@ -1,0 +1,41 @@
+.portfolio {
+  background-color: #f5fbff;
+  padding-top: 80px;
+  padding-bottom: 90px;
+
+  @media (max-width: 1139px) {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    padding-top: 50px;
+  }
+}
+
+.portfolio__text {
+  margin-bottom: 65px;
+  /* Tablet */
+  @media (max-width: 1139px) {
+    margin-bottom: 40px;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    margin-bottom: 30px;
+  }
+}
+
+.mix-block_btn button:hover,
+.mix-block_btn button:active,
+.mix-block_btn button:focus {
+  color: red;
+}
+
+.mix-block_btn button:active {
+  color: #000;
+}

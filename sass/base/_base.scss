@@ -1,0 +1,246 @@
+html {
+  min-height: 100vh; /* sticky footer */
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh; /* sticky footer */
+  display: flex; /* sticky footer */
+  flex-direction: column; /* sticky footer */
+
+  font-family: "Montserrat";
+  color: $black-color;
+  font-size: 16px;
+  line-height: 1.6875;
+
+  text-rendering: optimizeSpeed;
+  //text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body > * {
+  flex-shrink: 0; /* sticky footer */
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+section {
+  // position: relative;
+}
+
+/* Grid styles */
+
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* Tablet Big */
+  @media (max-width: 1139px) {
+    width: 900px;
+  }
+
+  /* Tablet Small */
+  @media (max-width: 899px) {
+    width: 768px;
+  }
+
+  /* Mobile */
+  @media (max-width: 767px) {
+    width: 320px;
+  }
+}
+
+/* Utility */
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
+}
+
+/* Sticky Footer */
+
+.footer {
+  margin-top: auto; /* sticky footer */
+
+  /* Just for fun */
+  text-align: center;
+  background-color: #e2e2e2;
+  padding: 50px 0;
+}
+
+/* =============== TITLE ============= */
+
+.title {
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 1;
+
+  &.border-grad {
+    background-position: left bottom 12px;
+    background-size: 100% 8px;
+  }
+
+  /* Tablet */
+  @media (max-width: 1139px) {
+    font-size: 56px;
+    &.border-grad {
+      background-position: left bottom 8px;
+      background-size: 100% 8px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    font-size: 42px;
+    &.border-grad {
+      background-position: left bottom 5px;
+      background-size: 100% 8px;
+    }
+  }
+
+  /* Mobile-xs */
+  @media (max-width: 767px) {
+    font-size: 32px;
+    &.border-grad {
+      background-position: left bottom 1px;
+      background-size: 100% 8px;
+    }
+  }
+}
+
+.title-text {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3;
+  /* Tablet */
+  @media (max-width: 1139px) {
+    font-size: 32px;
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    font-size: 24px;
+  }
+}
+
+.title-second {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1.3;
+
+  &.border-grad {
+    background-position: left bottom 10px;
+    background-size: 100% 8px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+      font-size: 42px;
+      background-position: left bottom 5px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+      font-size: 32px;
+      background-position: left bottom 1px;
+    }
+  }
+}
+
+.title-five {
+  display: inline;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+  /* Tablet */
+  @media (max-width: 1139px) {
+    font-size: 20px;
+  }
+
+  &.border-grad {
+    background-position: left bottom 3px;
+    background-size: 100% 5px;
+    @media (max-width: 1139px) {
+      background-position: left bottom 0;
+      background-size: 100% 5px;
+    }
+  }
+}
+
+.title-six {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+}
+
+.social {
+  display: flex;
+  column-gap: 30px;
+  /* Tablet */
+  @media (max-width: 1139px) {
+    column-gap: 20px;
+  }
+  a {
+    /* Mobile */
+    @media (max-width: 899px) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+.social a:hover {
+  opacity: 0.75;
+}
+
+.page-link {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3;
+  color: #1a71d2;
+  @media (max-width: 1139px) {
+    font-size: 18px;
+  }
+}
+
+.page-link-phone {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #1a71d2;
+}
+
+.page-link:hover {
+  color: red;
+}
+
+// bactop arrow-up
+.backtop-btn {
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
+  z-index: 999;
+  font-size: 50px;
+  color: #f4cd21 !important;
+  display: inline-block;
+   /* Mobile-xs */
+   @media (max-width: 767px) {
+    right: 28px;
+  }
+}
