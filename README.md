@@ -7,4 +7,3 @@ Technologies:
 - jQuery.
 - Ajax.
 - Mixitup.
-- jQuery.
