@@ -6,4 +6,5 @@ Technologies:
 - PHP.
 - jQuery.
 - Ajax.
-- Mixitup
+- Mixitup.
+ jQuery.
